@@ -25,6 +25,15 @@ $(document).ready(function () {
 			side = "front";
 		draw(current, side);
 	});
+	$(document).keydown(function(event)
+	{
+		if(event.which == 32)
+			$("#center").click();
+		else if(event.which == 39)
+			$("#right").click();
+		else if(event.which == 37)
+			$("#left").click();
+	});
 });
 
 function draw(current, side) {
