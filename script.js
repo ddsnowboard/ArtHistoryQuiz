@@ -25,6 +25,7 @@ $(document).ready(function () {
 			side = "front";
 		draw(current, side);
 	});
+	$("#counter").html((current+1).toString()+' of '+cards.length.toString());
 	$(document).keydown(function(event)
 	{
 		if(event.which == 32)
@@ -38,4 +39,5 @@ $(document).ready(function () {
 
 function draw(current, side) {
 	$("#center").html(cards[current][side]);
+	$("#counter").html((current+1).toString()+' of '+cards.length.toString())
 }

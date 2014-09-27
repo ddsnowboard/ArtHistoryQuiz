@@ -1,4 +1,4 @@
-tbody, tr {
+.tall {
 	height: 500px;
 	width: 300px;
 }
@@ -20,4 +20,7 @@ table {
 img {
 	max-width: 700px;
 	max-height: 500px;
+}
+#counter {
+	text-align: center;
 }
