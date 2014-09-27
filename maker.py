@@ -1,3 +1,4 @@
+# -*- coding: ANSI -*-
 with open("MASTER.txt", 'r') as m:
 	with open("cards.js", 'w') as o:
 		o.write("var cards = [")

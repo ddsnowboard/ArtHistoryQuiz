@@ -1,4 +1,4 @@
-chauvet.jpg
+﻿chauvet.jpg
 Chauvet Caves
 Cave Paintings
 By Unknown Prehistoric Man
@@ -23,7 +23,7 @@ Paleolithic Art, from about 25,000 BC
 Found in Dordogne Region of France
 Probably a symbol for a fertility goddess or similar. 
 
-brassempouy.jpg
+brassempouy.png
 Venus of Brassempouy
 Mammoth Ivory Sculpture
 Unknown Artist
@@ -34,7 +34,7 @@ Unclear use; probably for some kind of ceremonial or religious use.
 pyramid.jpg
 Pyramids of Giza
 Brick Building
-Unknown Architect—Built by slaves
+Unknown Architect - Built by slaves
 Egyptian Art
 In the Necropolis, boardering El Giza, Egypt
 Used as a tomb for a Pharaoh
