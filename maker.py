@@ -1,3 +1,4 @@
+import re
 with open("MASTER.txt", 'r') as m:
 	with open("cards.js", 'w') as o:
 		o.write("var cards = [")
@@ -7,6 +8,8 @@ with open("MASTER.txt", 'r') as m:
 			line += 1
 			if picture and i == '\n':
 				raise Exception("You need a picture at line %d" % line)
+			elif re.search(r"^[/]{2}", i):
+				pass			
 			elif picture:
 				o.write("{front: '<img src=\"%s\" />', back: '" % i.replace('\n', ''))
 				picture = False
