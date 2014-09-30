@@ -5,7 +5,7 @@ $(document).ready(function () {
 	// Note: I defined the variable "cards" as an array of objects with 2 attributes each, front and back. I make them programmatically
 	// with a python script, so they're saved in a separate file, cards.js. 
 	$("#left").click(function() {
-		if (!(current == 0))
+		if (current !== 0)
 			current--;
 		else 
 			current = cards.length - 1;
@@ -13,7 +13,7 @@ $(document).ready(function () {
 		draw(current, side);
 	});
 	$("#right").click(function(){
-		if (!(current == cards.length - 1))
+		if (current !== cards.length - 1)
 			current++;
 		else
 			current = 0;
@@ -22,7 +22,7 @@ $(document).ready(function () {
 	});
 	$("#center").html(cards[current][side]);
 	$("#center").click(function() {
-		if (side == 'front')
+		if (side === 'front')
 			side = "back";
 		else
 			side = "front";
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
 function draw(current, side) {
 	$("#center").html(cards[current][side]);
-	$("#counter").html((current+1).toString()+' of '+cards.length.toString())
+	$("#counter").html((current+1).toString()+' of '+cards.length.toString());
 }
 
 // Borrowed from https://stackoverflow.com/a/6274398/2570117
