@@ -1,7 +1,6 @@
 $(document).ready(function () {
 	var current = 0;
 	var side = "front";
-	// This is the start of the randomization feature. 
 	var MASTER_CARDS = cards;
 	// Note: I defined the variable "cards" as an array of objects with 2 attributes each, front and back. I make them programmatically
 	// with a python script, so they're saved in a separate file, cards.js. 
@@ -40,10 +39,14 @@ $(document).ready(function () {
 			$("#left").click();
 	});
 	$("#random").click(function() {
+		MASTER_CARDS = cards;
 		cards = shuffle(cards);
 		current = 0;
 		side = "front";
-		draw();
+		draw(current, side);
+	});
+	$("#unshuffle").click(function() {
+		location.reload();
 	});
 });
 
