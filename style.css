@@ -6,12 +6,6 @@
 	width: 700px;
 	text-align: center;
 }
-table {
-	position: absolute;
-	top: 100px;
-	left: 100px;
-}
-
 img {
 	max-width: 700px;
 	max-height: 500px;
