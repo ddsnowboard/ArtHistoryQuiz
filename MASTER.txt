@@ -1,8 +1,9 @@
 // If I gave you this file, I probably want you to help me fill it in. It's very important that you follow the format exactly, or else my 
 // compilation program will get mad and everything will break. You have to have exactly one empty line between each piece's paragraph, then 
-// a name of an image (it can be pretty much anything; somebody just needs to go get a picture, put it in the folder, and then rename it right)
-// and then information. Any line breaks you put in this file will be reflected on the website. Then another line break, then start over. Just one 
-// empty line between each image, that's the really important part. You can also just use the ones I've already done as guides, if you want. 
+// a name of an image (it can be pretty much anything; somebody just needs to go get a picture, put it in the folder, and then rename it properly, 
+// including changing the extension in this file to reflect the picture that you found.) and then information. Any line breaks you put in this file will be 
+// reflected on the website. When you're done with a piece, put an empty line, and start over. Just one empty line between each image, that's really important. 
+// You can also just use the ones I've already done as guides, if you want. 
 chauvet.jpg
 Chauvet Caves
 Cave Paintings

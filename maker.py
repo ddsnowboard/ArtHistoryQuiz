@@ -1,3 +1,6 @@
+# This is the python script that converts the human-readable text in MASTER.txt into computer-readable text in cards.js. 
+# There's no reason to edit this either; just edit MASTER.txt, then whenever you're done, run this and it will edit cards.js
+# accordingly. 
 import re
 with open("MASTER.txt", 'r') as m:
 	with open("cards.js", 'w') as o:
