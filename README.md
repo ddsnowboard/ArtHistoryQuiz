@@ -29,10 +29,10 @@ First, let me define my terms. "Commit" is pretty much just the same as saving y
 After you edit, including running maker.py to update cards.js if you need to, open your git client and run
 ```
 git add .
-git commit
+git commit -m "First Commit"
 ```
 The dot after `git add` isn't a typo. 
-This will probably open up a simple text editor in your command prompt. If I were you, I'd use your GUI to run this command instead of the command line because the command line editor is rather hard to use; I have it set up to open Notepad++ for writing commits. In any case, write a commit. The standard format for a commit is like this. 
+The bit after `-m` is the commit message. After this one, you might want to give more informative messages (you can have more than one paragraph by having each one preceded by a `-m`. See below for standard commit format.) If you want to type a commit out in a longer format (which I usually do), you can leave out the `-m` and it will open a text-editor. You probably won't like the one it gives you you can change it. Or, if you're in a GUI, you don't have to worry about it. This format, however, still stands. For the sake of standards, I suggest you roughly stick to it. 
 
 This is a short, one line summary of what you did. 
 [This is a blank line]
