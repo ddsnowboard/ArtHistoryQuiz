@@ -9,10 +9,7 @@ $(document).ready(function () {
 	// with a python script, so they're saved in a separate file, cards.js. That's why they're not here and your editor might yell at you for 
 	// talking about them. 
 	// Initializes the first card on screen. 
-	$("#center").html(cards[current][side]);
-	// Initializes the counter. 
-	$("#counter").html((current+1).toString()+' of '+cards.length.toString());
-	// This just governs behavior of the left arrow button. 
+	draw(current, side);
 	$("#left").click(function() {
 		// I need this if/else to cover wrapping around to the end if you go left from card 0. 
 		if (current !== 0)
@@ -68,7 +65,7 @@ $(document).ready(function () {
 });
 // Puts the current setup on the screen. 
 function draw(current, side) {
-	$("#center").html(cards[current][side]);
+	$("#card").html(cards[current][side]);
 	$("#counter").html((current+1).toString()+' of '+cards.length.toString());
 }
 
