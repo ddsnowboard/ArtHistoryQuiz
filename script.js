@@ -62,6 +62,10 @@ $(document).ready(function () {
 	$("#unshuffle").click(function() {
 		location.reload();
 	});
+	for(var i = 0; i<cards.length; i++)
+	{
+		$("#pre").append(cards[i.toString()]['prefetch'])
+	}
 });
 // Puts the current setup on the screen. 
 function draw(current, side) {

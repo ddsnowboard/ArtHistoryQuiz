@@ -14,7 +14,7 @@ with open("MASTER.txt", 'r') as m:
 			elif re.search(r"^[/]{2}", i):
 				pass			
 			elif picture:
-				o.write("{front: '<img src=\"pictures/%s\" />', back: '" % i.replace('\n', ''))
+				o.write("{front: '<img src=\"pictures/%s\" />', prefetch: '<img class=\"prefetch\" src=\"pictures/%s\" />', back: '" % (i.replace('\n', ''), i.replace('\n', '')))
 				picture = False
 			elif i == '\n' and not picture:
 				o.write("'}, ")

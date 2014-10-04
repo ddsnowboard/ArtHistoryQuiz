@@ -53,3 +53,9 @@ img {
 .down {
     background: linear-gradient(to bottom right, #686868, #A0A0A0);
 }
+.prefetch{
+	visibility: hidden;
+	height: 1px;
+	width: 1px;
+	display: inline;
+}
