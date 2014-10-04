@@ -62,6 +62,7 @@ $(document).ready(function () {
 	$("#unshuffle").click(function() {
 		location.reload();
 	});
+	// Prefetches all the images so they don't have to be loaded in real time. 
 	for(var i = 0; i<cards.length; i++)
 	{
 		$("#pre").append(cards[i.toString()]['prefetch'])
