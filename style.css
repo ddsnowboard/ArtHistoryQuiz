@@ -59,3 +59,11 @@ img {
 	width: 1px;
 	display: inline;
 }
+#information {
+	width: 50%;
+}
+#hider {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}

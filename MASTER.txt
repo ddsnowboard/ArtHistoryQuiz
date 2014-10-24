@@ -286,6 +286,7 @@ Marble
 Vatican Museum
 Used to be in Titus' Palace
 Pliny the Elder wrote about it in his <em>Natural History</em>. He really seemed to like it. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 romanPainting.png
 Villa of Livia Drusilla
