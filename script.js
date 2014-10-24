@@ -3,6 +3,7 @@
 $(document).ready(function () {
 	// The current card being shown. Starts at 0 (arrays are zero-indexed). 
 	var current = 0;
+	cards = old.concat(after);
 	// What side we're on. Either "front" or "back". Anything else will throw an error. This is case-sensitive. 
 	var side = "front";
 	// I defined the variable "cards" as an array of objects with 2 attributes each, front and back. I make them programmatically
@@ -61,6 +62,24 @@ $(document).ready(function () {
 	// I couldn't get the functionality to go get a master list and re-set it to be the actual list to run right, so this just refreshes the page. 
 	$("#unshuffle").click(function() {
 		location.reload();
+	});
+	$("#old").click(function() {
+		cards = old;
+		side = 'front';
+		current = 0;
+		draw(current, side);
+	});
+	$("#new").click(function() {
+	cards = after;
+	side = 'front';
+	current = 0;
+	draw(current, side);
+	});
+	$("#all").click(function() {
+		cards = after.concat(old);
+		side="front";
+		current = 0;
+		draw(current, side);
 	});
 	// Prefetches all the images so they don't have to be loaded in real time. 
 	for(var i = 0; i<cards.length; i++)
