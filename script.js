@@ -1,15 +1,20 @@
 // This is the script that governs the switching of the cards on the page.
 // Don't change this unless you know what you're doing and want to add something.
 $(document).ready(function () {
-	// The current card being shown. Starts at 0 (arrays are zero-indexed).
+	// The current card being shown.
 	var current = 0;
+	// This is the current set we're working with. At the beginning, it's just a combination of "old" and "after". Note that "after"
+	// really should be called "new", but that's a javascript reserved word, so I couldn't. I use ".slice()" to copy the array by value
+	// so that when I shuffle it, the real one stays in order. 
 	cards = old.concat(after).slice();
+	// This is just an easier to check indicator of which set we're on. 
 	current_set = "all";
-	// What side we're on. Either "front" or "back". Anything else will throw an error. This is case-sensitive.
+	// What side we're on. Either "front" or "back". Anything else will throw an error. This is case-sensitive. Only use lowercase. 
 	var side = "front";
-	// I defined the variable "cards" as an array of objects with 2 attributes each, front and back. I make them programmatically
-	// with a python script, so they're saved in a separate file, cards.js. That's why they're not here and your editor might yell at you for
-	// talking about them.
+	// I defined the variables old and after as an array of objects with 3 attributes each, front, back, and prefetch. I make them 
+	// programmatically with a python script, so they're saved in separate files, old.js for old, and new.js for after. That's why they're not 
+	//here and your editor might yell at you for talking about them.
+	
 	// Initializes the first card on screen.
 	draw(current, side);
 	$("#left").click(function () {
@@ -42,7 +47,7 @@ $(document).ready(function () {
 	});
 	// This function governs everything that happens when some key is pressed.
 	$(document).keydown(function (event) {
-		// Key 32 is space; if you press it, flip the card (i.e. do what would be done if you clicked the center.
+		// Key 32 is space; if you press it, flip the card (i.e. do what would be done if you clicked the center.)
 		if (event.which == 32)
 			$("#center").click();
 		// Key 39 is right.
@@ -59,7 +64,8 @@ $(document).ready(function () {
 		side = "front";
 		draw(current, side);
 	});
-	// I couldn't get the functionality to go get a master list and re-set it to be the actual list to run right, so this just refreshes the page.
+	// This resets the set of cards back to its ordered version. It chooses the one you were using before, so you don'tags
+	// have to pick again. 
 	$("#unshuffle").click(function () {
 		switch(current_set){
 			case "old":
@@ -76,6 +82,7 @@ $(document).ready(function () {
 		side = 'front';
 		draw(current, side);
 	});
+	// This switches to the old set of cards. 
 	$("#old").click(function () {
 		cards = old.slice();
 		current_set = "old";
@@ -83,6 +90,7 @@ $(document).ready(function () {
 		current = 0;
 		draw(current, side);
 	});
+	// This switches to the new set of cards. 
 	$("#new").click(function () {
 		cards = after.slice();
 		current_set = "new";
@@ -90,6 +98,7 @@ $(document).ready(function () {
 		current = 0;
 		draw(current, side);
 	});
+	// This shows both sets together. 
 	$("#all").click(function () {
 		cards = old.concat(after).slice();
 		current_set = "all";
@@ -97,6 +106,7 @@ $(document).ready(function () {
 		current = 0;
 		draw(current, side);
 	});
+	// This hides the little paragraph of information I have at the top. 
 	$("#hider").click(function() {
 		$("#information").slideUp();
 	});
@@ -105,7 +115,7 @@ $(document).ready(function () {
 		$("#pre").append(cards[i.toString()]['prefetch'])
 	}
 });
-// Puts the current setup on the screen.
+// Puts the current arrangement on the screen.
 function draw(current, side) {
 	$("#card").html(cards[current][side]);
 	$("#counter").html((current + 1).toString() + ' of ' + cards.length.toString());
