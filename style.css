@@ -61,8 +61,14 @@ img {
 }
 #information {
 	width: 50%;
+	display: none;
 }
 #hider {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+#forever {
 	color: blue;
 	text-decoration: underline;
 	cursor: pointer;

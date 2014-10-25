@@ -1,9 +1,9 @@
 // This is the script that governs the switching of the cards on the page.
 // Don't change this unless you know what you're doing and want to add something.
 $(document).ready(function () {
-	if(document.cookie != "")
+	if(document.cookie === "")
 	{
-		$("#information").html('');
+		$("#information").slideDown(600);
 	}
 	// The current card being shown.
 	var current = 0;
@@ -113,6 +113,9 @@ $(document).ready(function () {
 	// This hides the little paragraph of information I have at the top. 
 	$("#hider").click(function() {
 		$("#information").slideUp();
+	});
+	$("#forever").click(function() {
+		$("#hider").click();
 		document.cookie = "hidden=true";
 	});
 	// Prefetches all the images so they don't have to be loaded in real time.
