@@ -116,7 +116,9 @@ $(document).ready(function () {
 	});
 	$("#forever").click(function() {
 		$("#hider").click();
-		document.cookie = "hidden=true";
+		var expiration = new Date();
+		expiration.setFullYear(expiration.getFullYear()+1);
+		document.cookie = "hidden=true;expires="+expiration.toGMTString();
 	});
 	// Prefetches all the images so they don't have to be loaded in real time.
 	for (var i = 0; i < cards.length; i++) {
