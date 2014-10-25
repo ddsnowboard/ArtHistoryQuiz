@@ -1,6 +1,10 @@
 // This is the script that governs the switching of the cards on the page.
 // Don't change this unless you know what you're doing and want to add something.
 $(document).ready(function () {
+	if(document.cookie != "")
+	{
+		$("#information").html('');
+	}
 	// The current card being shown.
 	var current = 0;
 	// This is the current set we're working with. At the beginning, it's just a combination of "old" and "after". Note that "after"
@@ -109,6 +113,7 @@ $(document).ready(function () {
 	// This hides the little paragraph of information I have at the top. 
 	$("#hider").click(function() {
 		$("#information").slideUp();
+		document.cookie = "hidden=true";
 	});
 	// Prefetches all the images so they don't have to be loaded in real time.
 	for (var i = 0; i < cards.length; i++) {
