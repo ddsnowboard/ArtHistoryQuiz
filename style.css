@@ -1,9 +1,15 @@
 .tall {
-	height: 500px;
+	height: 700px;
 	width: 300px;
 }
+table {
+	width: 100%;
+}
+#left {
+	text-align: right;
+}
 #center {
-	width: 700px;
+	width: 80%;
 	text-align: center;
 	height: 450px;
 	background: linear-gradient(to bottom right, #C0C0C0 , #888888);
@@ -17,8 +23,8 @@
 	margin-right: auto;
 }
 img {
-	max-width: 700px;
-	max-height: 500px;
+	max-width: 100%;
+	max-height: 675px;
 }
 #counter {
 	text-align: center;
