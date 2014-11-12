@@ -8,7 +8,7 @@ To add, remove, or edit cards, use MASTER.txt. I highly, highly recommend agains
 file containing one huge list of objects. You really don't want to touch them; MASTER.txt is much easier. First, if you don't have python 
 on your computer, install it. Then, make MASTER.txt say whatever you want it to, following the format written there. Then, to update `new.js` and `old.js`
 to match, just run maker.py with your python interpreter, and they will be updated. You don't need to do anything else unless I've made a mistake 
-in maker.py (which, not to brag, but I probably haven't). Other than that, everything else either doesn't need to be explained or you can read about 
+in maker.py (which, not to brag, I probably haven't). Other than that, everything else either doesn't need to be explained or you can read about 
 in its file. 
 
 ## Git Primer
