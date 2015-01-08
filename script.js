@@ -17,12 +17,9 @@ $(document).ready(function () {
 	// I defined the variables old and after as an array of objects with 3 attributes each, front, back, and prefetch. I make them
 	// programmatically with a python script, so they're saved in separate files, old.js for old, and new.js for after. That's why they're not
 	//here and your editor might yell at you for talking about them.
-	
-	// This realigns the window so that it fits better on the screen. 
-	$(".tall").css("height", $(window).height() * .85);
-	$("img").css("max-height", $(window).height() * .60);
 	// Initializes the first card on screen.
 	draw(current, side);
+	console.log("Ran code");
 	$("#left").click(function () {
 		// I need this if/else to cover wrapping around to the end if you go left from card 0.
 		if (current !== 0) {
@@ -137,6 +134,9 @@ $(document).ready(function () {
 function draw(current, side) {
 	$("#card").html(cards[current][side]);
 	$("#counter").html((current + 1).toString() + ' of ' + cards.length.toString());
+	// This realigns the window so that it fits better on the screen.
+	$(".tall").css("height", $(window).height() * .85);
+	$("img").css("max-height", $(window).height() * .80 + "px");
 }
 
 // Borrowed from https://stackoverflow.com/a/6274398/2570117
