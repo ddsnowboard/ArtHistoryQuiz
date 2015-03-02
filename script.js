@@ -16,7 +16,7 @@ $(document).ready(function () {
 	var side = "front";
 	// I defined the variables old and after as an array of objects with 3 attributes each, front, back, and prefetch. I make them
 	// programmatically with a python script, so they're saved in separate files, old.js for old, and new.js for after. That's why they're not
-	//here and your editor might yell at you for talking about them.
+	// here and your editor might yell at you for talking about them.
 	// Initializes the first card on screen.
 	draw(current, side);
 	console.log("Ran code");
@@ -136,7 +136,7 @@ function draw(current, side) {
 	$("#counter").html((current + 1).toString() + ' of ' + cards.length.toString());
 	// This realigns the window so that it fits better on the screen.
 	$(".tall").css("height", $(window).height() * .85);
-	$("img").css("max-height", $(window).height() * .80 + "px");
+	$("img").css("max-height", $(window).height() * .80);
 }
 
 // Borrowed from https://stackoverflow.com/a/6274398/2570117
