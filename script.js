@@ -19,7 +19,6 @@ $(document).ready(function () {
 	// here and your editor might yell at you for talking about them.
 	// Initializes the first card on screen.
 	draw(current, side);
-	console.log("Ran code");
 	$("#left").click(function () {
 		// I need this if/else to cover wrapping around to the end if you go left from card 0.
 		if (current !== 0) {
@@ -73,7 +72,7 @@ $(document).ready(function () {
 		side = "front";
 		draw(current, side);
 	});
-	// This resets the set of cards back to its ordered version. It chooses the one you were using before, so you don'tags
+	// This resets the set of cards back to its ordered version. It chooses the one you were using before, so you don't
 	// have to pick again.
 	$("#unshuffle").click(function () {
 		switch (current_set) {
