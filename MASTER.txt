@@ -5,7 +5,8 @@
 // this file will be reflected on the website. When you're done with a piece, put an empty line, and start over. Just one empty 
 // line between each image, that's really important. You can also just use the ones I've already done as guides, if you want.
 // Also, note that, if you want to split this up into 2 sets (usually pre-midterm and post-midterm), you can do that by putting a line of
-// = in the file where you want to break it. There need be no line break on either side of the line of =, just start with another picture. 
+// = in the file where you want to break it. There need be no line break on either side of the line of =, just start with another picture. Also, 
+// use "//" for a comment, just as I've done here. That line will be ignored by my program. 
 chauvet.jpg
 Chauvet Caves
 Cave Paintings
