@@ -13,8 +13,8 @@ in its file.
 
 ## Git Primer
 
-If, in the course of Priorian events, I must break the bonds that tie me to other programming-types and give this to someone who doesn't know anything
-about VCS's, here's how to make this work with git and GitHub. 
+If, in the course of Priorian events, it should become necessary for one man to break the bonds that once connected him to other programmers and computer scientists 
+and hand over the reins to someone who doesn't know anything about VCS's, here's how to make this work with git and GitHub. 
 ###Step 1: Install a git client
 You could use the official GitHub client, or some other one. I use git bash, but I'm kinda old-fashioned like that. I'm going to assume, however, 
 that you're using git from the command line. You probably aren't, but all these commands (except perhaps `git pull`) will be in your front-end somewhere. 
@@ -35,7 +35,7 @@ on your computer. Type in
 ```
 git clone [URL]
 ```
-where [URL] is the url you just copied. (In some git clients, the way to copy is with the "insert" button on your keyboard) It might ask for your git 
+where [URL] is the url you just copied. (In some git clients, the way to copy is with the "insert" button on your keyboard instead of the normal Control-V) It might ask for your git 
 username and password, it might not. If you follow its directions, it will download onto your local machine so you can edit it. 
 
 ###Step 6: Commit your changes
