@@ -1,65 +1,73 @@
-<!-- This is the HTML of the website. There's no reason to touch this unless there's a bug or you want to add a new button, 
+<!-- This is the HTML of the website. There's no reason to touch this unless there's a bug or you want to add a new button,
 or perhaps change the size of things. -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="generator"
-        content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
-        <title>Art History Flashcards</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <script src="jquery-2.1.1.min.js"></script>
-        <script src="old.js"></script>
-        <script src="new.js"></script>
-        <script src="script.min.js"></script>
-        <script src="master.js"></script>
-    </head>
-    <body>
-        <div id="information">Hello there winter art history students! Here's this thing that I thought might perhaps help you. If you have a piece or some information in your notes that I didn't catch, or you got to a different place before the first test (I can change where it splits the sets of old and new cards) email me at the address below. 
-        <span id="hider">Click here to hide this message</span> or 
-        <span id="forever">click here to never see this again.</span></div>
-        <table>
-            <tr>
-                <td style="text-align:right">
-                    <div class="button" id="old">Old Cards</div>
-                </td>
-                <td>
-                    <div class="button" id="all" style="width: 100%">All Cards</div>
-                </td>
-                <td>
-                    <div class="button" id="new">New Cards</div>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td id="counter"></td>
-            </tr>
-            <tr>
-                <td style="text-align:right">
-                    <div id="random" class="button">Shuffle</div>
-                </td>
-                <td style="text-align:center">Click the arrows to switch cards, and click the card to flip it.</td>
-                <td>
-                    <div id="unshuffle" class="button">Un-shuffle</div>
-                </td>
-            </tr>
-            <tr class="tall">
-                <td id="left" class="box">
-                    <img src="left.png" />
-                </td>
-                <td class="box" id="center">
-                    <div id="card"></div>
-                </td>
-                <td id="right" class="box">
-                    <img src="right.png" />
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td style="text-align: center">If you find a mistake, email me at kosterw[AT]stlprioryschool[DOT]org.</td>
-            </tr>
-        </table>
-        <!-- This is for prefetching. It loads all the images after the rest of the page is done loading but before you actually 
+
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+  <title>Art History Flashcards</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="jquery-2.1.1.min.js"></script>
+  <script src="old.js"></script>
+  <script src="new.js"></script>
+  <script src="script.min.js"></script>
+  <script src="master.js"></script>
+</head>
+
+<body>
+  <div id="information">Hello there winter art history students! Here's this thing that I thought might perhaps help you. If you have a piece or some information in your notes that I didn't catch, or you got to a different place before the first test (I can change where it
+    splits the sets of old and new cards) email me at the address below.
+    <span id="hider">Click here to hide this message</span> or
+    <span id="forever">click here to never see this again.</span>
+  </div>
+  <table>
+    <tr>
+      <td style="text-align:right">
+        <div class="button" id="old">Old Cards</div>
+      </td>
+      <td>
+        <div class="button" id="all" style="width: 100%">All Cards</div>
+      </td>
+      <td>
+        <div class="button" id="new">New Cards</div>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td id="counter"></td>
+    </tr>
+    <tr>
+      <td style="text-align:right">
+        <div id="random" class="button">Shuffle</div>
+      </td>
+      <td style="text-align:center">Click the arrows to switch cards, and click the card to flip it.</td>
+      <td>
+        <div id="unshuffle" class="button">Un-shuffle</div>
+      </td>
+    </tr>
+    <tr class="tall">
+      <td id="left" class="box">
+        <img src="left.png" />
+      </td>
+      <td class="box" id="center">
+        <div id="card"></div>
+      </td>
+      <td id="right" class="box">
+        <img src="right.png" />
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="text-align: center">If you find a mistake, email me at kosterw[AT]stlprioryschool[DOT]org.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="text-align: center">Design by <a href="https://www.github.com/Adderall-XR">github.com/Adderall-XR</a> (Ian McClellan)</td>
+    </tr>
+  </table>
+  <!-- This is for prefetching. It loads all the images after the rest of the page is done loading but before you actually
                 switch cards so that you don't have to load them then. -->
-        <div id="pre" class="prefetch"></div>
-    </body>
+  <div id="pre" class="prefetch"></div>
+</body>
+
 </html>
