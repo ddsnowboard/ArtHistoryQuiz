@@ -26,6 +26,6 @@ with open("MASTER.txt", 'r') as m:
 					which.write("'}, ")
 					picture = True
 				else:
-					which.write(i.replace('\n', '<br/>').replace("'", r"\'"))
+					which.write(i.replace('\n', '<br/><br>').replace("'", r"\'"))
 			o.write("'}];")
 			n.write("'}];")

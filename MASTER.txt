@@ -9,7 +9,7 @@
 // use "//" for a comment, just as I've done here. That line will be ignored by my program. 
 chauvet.jpg
 Chauvet Caves
-Cave Paintings
+Location: Cave Paintings
 By Unknown Prehistoric Man
 Roughly 30,000 years ago. 
 In the Ardeche Region of France
